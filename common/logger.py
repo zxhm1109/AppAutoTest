@@ -14,5 +14,6 @@ fmt = "%(asctime)s %(levelname)s %(filename)s %(funcName)s [ line:%(lineno)d ] %
 datafmt = '%a, %d %b %Y %H:%M:%S'
 handler_1 = logging.StreamHandler()
 curTime = time.strftime("%Y-%m-%d %H%M", time.localtime())
-handler_2 = RotatingFileHandler(path_conf.logs_path + '/APP_AutoTest_{}.log'.format(curTime), backupCount=20, encoding='utf-8')
+handler_2 = RotatingFileHandler(path_conf.logs_path + '/APP_AutoTest_{}.log'.format(curTime), backupCount=20,
+                                encoding='utf-8')
 logging.basicConfig(format=fmt, datefmt=datafmt, level=logging.INFO, handlers=[handler_1, handler_2])

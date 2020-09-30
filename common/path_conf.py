@@ -10,9 +10,9 @@ import os
 base_path = os.path.split(os.path.split(os.path.abspath(__file__))[0])[0]
 
 logs_path = os.path.join(base_path, 'Outputs/logs')
-config_path = os.path.join(base_path, '')
+Base_config_path = os.path.join(base_path, 'Testdatas/BaseConfig.ini')
 screenShot_path = os.path.join(base_path, 'Outputs/ScreenShot')
+report_path = os.path.join(base_path, 'Outputs/report')
 
 if __name__ == '__main__':
-    print(base_path)
-
+    print(report_path)
