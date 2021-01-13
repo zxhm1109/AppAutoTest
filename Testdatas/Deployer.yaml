@@ -1,0 +1,39 @@
+P7C0218117013105:
+  - platformName : Android
+  - platformVersion : 10
+  - deviceName = P7C0218117013105
+  - appPackage = cn.sancell.ssbm
+  - appActivity = cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity
+# noReset = true  # 是否重置app
+
+[NAB5T20506007667]
+platformName = Android
+platformVersion = 10
+deviceName = NAB5T20506007667
+appPackage = cn.sancell.ssbm
+appActivity = cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity
+# noReset = true
+
+[d8bec445]
+platformName = Android
+platformVersion = 9
+deviceName = d8bec445
+appPackage = cn.sancell.ssbm
+appActivity = cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity
+
+[54c752a8]
+platformName = Android
+platformVersion = 6.0.1
+deviceName = 54c752a8
+appPackage = cn.sancell.ssbm
+appActivity = cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity
+automationName = UiAutomator1
+
+[ec2aaa0d]
+platformName = Android
+platformVersion = 7.1.2
+deviceName = ec2aaa0d
+appPackage = cn.sancell.ssbm
+appActivity = cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity
+automationName = UiAutomator1
+

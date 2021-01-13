@@ -1,0 +1,697 @@
+2020-12-31 14:09:43,006 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity'}} 检测正常
+2020-12-31 14:09:43,007 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:09:54,522 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:54,522 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:54,522 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:55,414 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:55,414 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:55,414 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:09:57,419 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:09:57,419 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:09:57,419 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:09:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:09:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:09:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:10:10,042 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:10:10,042 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:10:10,042 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:10:10,226 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:10:10,226 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:10:10,226 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:10:11,226 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:10:11,226 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:10:11,226 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:10:11,828 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:10:11,828 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:10:11,828 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:10:11,828 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:11,828 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:11,828 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:12,412 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:12,412 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:12,412 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:10:13,414 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:10:13,414 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:10:13,414 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:10:15,022 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:10:15,022 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:10:15,022 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:10:15,022 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:10:15,022 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:10:15,022 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:10:16,079 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:10:16,079 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:10:16,079 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:10:16,080 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:16,080 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:16,080 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:17,078 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:17,078 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:17,078 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:10:18,685 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:10:18,685 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:10:18,685 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:10:19,691 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:19,691 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:19,691 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:20,100 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:20,100 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:20,100 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:21,101 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:21,101 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:21,101 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:21,818 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:21,818 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:21,818 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:10:22,818 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:10:22,818 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:10:22,818 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:10:22,962 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:22,962 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:22,962 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:10:33,258 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:10:33,258 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:10:33,258 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:10:33,759 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:33,759 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:33,759 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:34,260 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:34,260 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:34,260 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-10-33.png
+2020-12-31 14:10:34,261 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:10:34,261 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:10:34,261 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:11:15,124 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity'}} 检测正常
+2020-12-31 14:11:15,124 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:11:26,562 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:26,562 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:26,562 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:27,477 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:27,477 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:27,477 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:11:29,485 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:11:29,485 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:11:29,485 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:11:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:11:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:11:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:42,999 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity'}} 检测正常
+2020-12-31 14:14:43,000 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:14:54,633 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:54,633 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:54,633 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:55,523 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:55,523 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:55,523 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:14:57,528 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:57,528 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:57,528 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:14:59,790 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:15:10,087 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:15:10,087 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:15:10,087 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:15:10,254 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:15:10,254 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:15:10,254 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:15:11,255 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:15:11,255 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:15:11,255 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:15:11,879 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:15:11,879 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:15:11,879 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:15:11,879 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:11,879 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:11,879 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:12,508 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:12,508 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:12,508 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:15:13,508 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:15:13,508 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:15:13,508 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:15:15,110 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:15:15,110 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:15:15,110 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:15:15,110 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:15:15,110 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:15:15,110 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:15:16,184 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:15:16,184 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:15:16,184 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:15:16,184 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:16,184 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:16,184 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:17,194 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:17,194 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:17,194 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:15:18,753 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:15:18,753 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:15:18,753 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:15:19,757 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:19,757 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:19,757 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:20,188 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:20,188 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:20,188 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:15:21,189 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:21,189 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:21,189 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:21,633 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:21,633 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:21,633 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:15:22,634 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:15:22,634 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:15:22,634 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:21:34,599 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity'}} 检测正常
+2020-12-31 14:21:34,599 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:21:46,009 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:46,009 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:46,009 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:46,905 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:46,905 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:46,905 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:21:48,928 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:21:48,928 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:21:48,928 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:21:51,509 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:21:51,509 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:21:51,509 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:22:01,792 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:22:01,792 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:22:01,792 - BasePage.py[line:45] - INFO :  查找元素：('id', 'iv_avatar')
+2020-12-31 14:22:01,939 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:22:01,939 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:22:01,939 - BasePage.py[line:74] - INFO :  点击元素：('id', 'iv_avatar')
+2020-12-31 14:22:02,940 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:22:02,940 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:22:02,940 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_phone')
+2020-12-31 14:22:03,536 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:22:03,536 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:22:03,536 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_phone') 输入内容：18888888881
+2020-12-31 14:22:03,537 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:03,537 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:03,537 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:04,129 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:04,129 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:04,129 - BasePage.py[line:74] - INFO : 登录 点击元素：('id', 'cn.sancell.ssbm:id/tv_get_code')
+2020-12-31 14:22:05,129 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:22:05,129 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:22:05,129 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_code')
+2020-12-31 14:22:05,833 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:22:05,833 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:22:05,833 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_code') 输入内容：8888
+2020-12-31 14:22:05,833 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:22:05,833 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:22:05,833 - BasePage.py[line:45] - INFO : 登录 查找元素：('id', 'cn.sancell.ssbm:id/edt_invite_code')
+2020-12-31 14:22:07,745 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:22:07,745 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:22:07,745 - BasePage.py[line:85] - INFO : 登录:元素：('id', 'cn.sancell.ssbm:id/edt_invite_code') 输入内容：
+2020-12-31 14:22:07,746 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:07,746 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:07,746 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:08,783 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:08,783 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:08,783 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/tv_login')
+2020-12-31 14:22:10,347 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:22:10,347 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:22:10,347 - BasePage.py[line:121] - INFO : 10 秒内页面  中存在元素：('id', 'cn.sancell.ssbm:id/rl_indetity')
+2020-12-31 14:22:11,351 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:11,351 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:11,351 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:11,827 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:11,827 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:11,827 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:12,828 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:12,828 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:12,828 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:13,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:13,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:13,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:22:14,268 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:22:14,268 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:22:14,268 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:22:14,384 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:14,384 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:14,384 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:22:24,713 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:22:24,713 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:22:24,713 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/ll_all_order')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:22:25,190 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-24.png
+2020-12-31 14:22:25,190 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-24.png
+2020-12-31 14:22:25,190 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-24.png
+2020-12-31 14:22:25,697 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-25.png
+2020-12-31 14:22:25,697 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-25.png
+2020-12-31 14:22:25,697 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-22-25.png
+2020-12-31 14:22:25,697 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:22:25,697 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:22:25,697 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:30:23,244 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity', 'noReset': 'true'}} 检测正常
+2020-12-31 14:30:23,244 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:30:33,847 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:30:33,847 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:30:33,847 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_ok')
+2020-12-31 14:30:34,414 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/tv_ok')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:30:34,414 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/tv_ok')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:30:34,414 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('id', 'cn.sancell.ssbm:id/tv_ok')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2020-12-31 14:30:34,700 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:34,700 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:34,700 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:35,001 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:35,001 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:35,001 - BasePage.py[line:209] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2020-12-31-14-30-34.png
+2020-12-31 14:30:35,001 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:30:35,001 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:30:35,001 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2020-12-31 14:30:49,806 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity', 'noReset': 'true'}} 检测正常
+2020-12-31 14:30:49,806 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:31:01,264 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:01,264 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:01,264 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:03,945 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:03,945 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:03,945 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:31:04,947 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:04,947 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:04,947 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:05,119 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:05,119 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:05,119 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:31:06,119 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:06,119 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:06,119 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:07,288 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:07,288 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:07,288 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:08,290 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:08,290 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:08,290 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:08,688 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:08,688 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:08,688 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:31:09,688 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:09,688 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:09,688 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:10,042 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:10,042 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:10,042 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:31:11,043 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:11,043 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:11,043 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:11,321 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:11,321 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:11,321 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:31:12,322 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:12,322 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:12,322 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:12,667 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:12,667 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:12,667 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:31:13,668 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:13,668 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:13,668 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:13,992 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:13,992 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:13,992 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:31:14,992 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:31:14,992 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:31:14,992 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:32:35,831 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity', 'noReset': 'true'}} 检测正常
+2020-12-31 14:32:35,832 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:32:47,209 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:47,209 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:47,209 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:50,495 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:50,495 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:50,495 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:32:51,496 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:51,496 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:51,496 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:52,140 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:52,140 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:52,140 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:32:53,140 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:53,140 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:53,140 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:53,638 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:53,638 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:53,638 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:54,639 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:54,639 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:54,639 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:55,047 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:55,047 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:55,047 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:32:56,049 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:56,049 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:56,049 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:56,374 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:56,374 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:56,374 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:32:57,375 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:57,375 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:57,375 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:57,604 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:57,604 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:57,604 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:32:58,604 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:58,604 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:58,604 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:59,393 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:59,393 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:32:59,393 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:33:00,394 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:00,394 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:00,394 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:00,777 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:00,777 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:00,777 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:33:01,778 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:33:01,778 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:33:01,778 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:34:57,354 - conf.py[line:74] - INFO : 设备{'huaweiP40': {'platformName': 'Android', 'platformVersion': '10', 'deviceName': 'NAB5T20506007667', 'appPackage': 'cn.sancell.ssbm', 'appActivity': 'cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity', 'noReset': 'true'}} 检测正常
+2020-12-31 14:34:57,354 - Test_live.py[line:31] - INFO : 开始启动设备-------->>>>,huaweiP40
+2020-12-31 14:35:09,318 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:09,318 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:09,318 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:11,770 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:11,770 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:11,770 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:12,771 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:12,771 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:12,771 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:12,921 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:12,921 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:12,921 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:13,922 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:13,922 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:13,922 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:14,285 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:14,285 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:14,285 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:15,287 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:15,287 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:15,287 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:15,589 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:15,589 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:15,589 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:16,589 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:16,589 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:16,589 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:16,898 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:16,898 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:16,898 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:17,898 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:17,898 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:17,898 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:18,252 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:18,252 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:18,252 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:19,253 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:19,253 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:19,253 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:19,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:19,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:19,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:20,591 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:20,591 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:20,591 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:20,708 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:20,708 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:20,708 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:21,106 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:21,106 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:21,106 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:22,106 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:22,106 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:22,106 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:22,461 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:22,461 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:22,461 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:23,462 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:23,462 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:23,462 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:23,552 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:23,552 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:23,552 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:24,553 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:24,553 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:24,553 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:24,837 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:24,837 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:24,837 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:25,838 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:25,838 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:25,838 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:26,173 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:26,173 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:26,173 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:27,173 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:27,173 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:27,173 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:27,476 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:27,476 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:27,476 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:28,477 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:28,477 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:28,477 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:28,749 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:28,749 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:28,749 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:29,749 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:29,749 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:29,749 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:30,002 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:30,002 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:30,002 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:31,002 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:31,002 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:31,002 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:31,116 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:31,116 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:31,116 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:31,424 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:32,425 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:32,425 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:32,425 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:32,761 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:32,761 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:32,761 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="我的"]')
+2020-12-31 14:35:33,761 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:33,761 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:33,761 - BasePage.py[line:45] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:34,621 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:34,621 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:34,621 - BasePage.py[line:74] - INFO :  点击元素：('id', 'cn.sancell.ssbm:id/ll_all_order')
+2020-12-31 14:35:35,621 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:35,621 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:35,621 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:35,967 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:35,967 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:35,967 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待支付"]')
+2020-12-31 14:35:36,968 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:36,968 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:36,968 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:37,322 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:37,322 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:37,322 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="待使用"]')
+2020-12-31 14:35:38,324 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:38,324 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:38,324 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:38,653 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:38,653 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:38,653 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:39,653 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:39,653 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:39,653 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:39,959 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:39,959 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:39,959 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="全部"]')
+2020-12-31 14:35:40,961 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:40,961 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:40,961 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:41,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:41,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:41,268 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.LinearLayout[@content-desc="已完成"]')
+2020-12-31 14:35:42,269 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:42,269 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:42,269 - BasePage.py[line:53] - INFO :  查找元素：('id', 'cn.sancell.ssbm:id/tv_state')
+2020-12-31 14:35:42,340 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:42,340 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:42,340 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:42,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:42,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')
+2020-12-31 14:35:42,590 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView[1]')

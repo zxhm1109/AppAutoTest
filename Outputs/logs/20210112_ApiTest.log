@@ -1,0 +1,1330 @@
+2021-01-12 11:15:58,669 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.view.DmtViewPager.MyAccessibilityDelegate/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView')
+2021-01-12 11:15:58,767 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.view.DmtViewPager.MyAccessibilityDelegate/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 11:15:59,823 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-15-58.png
+2021-01-12 11:16:01,001 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-15-59.png
+2021-01-12 11:16:01,001 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 11:17:17,682 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.view.DmtViewPager.MyAccessibilityDelegate/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView')
+2021-01-12 11:17:17,750 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.support.v4.view.DmtViewPager.MyAccessibilityDelegate/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.TextView')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 11:17:18,890 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-17-17.png
+2021-01-12 11:17:20,439 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-17-18.png
+2021-01-12 11:17:20,439 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 11:20:59,937 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/dmt.viewpager.DmtViewPager.d/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout')
+2021-01-12 11:21:00,215 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/dmt.viewpager.DmtViewPager.d/android.widget.TabHost/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout[5]/android.widget.RelativeLayout/android.widget.RelativeLayout')
+2021-01-12 11:21:23,660 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 11:21:25,366 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 11:21:27,701 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-21-25.png
+2021-01-12 11:21:30,042 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-21-27.png
+2021-01-12 11:21:30,042 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 11:45:00,995 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 11:45:22,622 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 11:45:45,639 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 11:46:07,275 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 11:46:09,391 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup')
+2021-01-12 11:46:09,523 - BasePage.py[line:48] - ERROR :  没有找到元素！！：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 46, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 11:46:11,339 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-46-09.png
+2021-01-12 11:46:12,838 - BasePage.py[line:234] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-11-46-11.png
+2021-01-12 11:46:12,838 - BasePage.py[line:78] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 73, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 11:52:51,763 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 11:53:13,154 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 11:53:36,231 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 11:53:58,185 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 11:54:03,861 - BasePage.py[line:154] - INFO : <appium.webdriver.webelement.WebElement (session="d6d42671-b0ee-4ba6-9356-09870fb0b892", element="4")>
+2021-01-12 11:54:03,861 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 11:54:04,194 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:00:08,341 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:00:30,135 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:00:53,159 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:01:15,027 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:01:20,661 - BasePage.py[line:154] - INFO : <appium.webdriver.webelement.WebElement (session="31931b85-91cb-4202-9886-2d4ba59437b8", element="4")>
+2021-01-12 14:01:20,661 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:01:20,937 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:06:36,365 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:06:58,596 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:08:03,888 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:08:25,810 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:08:31,506 - BasePage.py[line:156] - INFO : <appium.webdriver.webelement.WebElement (session="a16f3634-50c6-4449-ac4e-a16c6489d836", element="4")>
+2021-01-12 14:08:31,507 - BasePage.py[line:45] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:08:31,767 - BasePage.py[line:74] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:08:35,800 - BasePage.py[line:160] - INFO : <appium.webdriver.webelement.WebElement (session="a16f3634-50c6-4449-ac4e-a16c6489d836", element="6")>
+2021-01-12 14:52:11,559 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:52:33,273 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:52:56,185 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:53:18,027 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 14:53:20,029 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 14:53:20,583 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 14:53:22,022 - BasePage.py[line:161] - INFO : <appium.webdriver.webelement.WebElement (session="5c3bb521-1da3-42c0-a0ef-c3d82f0b50e9", element="4")>
+2021-01-12 14:53:22,022 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:53:25,388 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 14:57:06,654 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 14:57:06,827 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 14:57:07,986 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-14-57-06.png
+2021-01-12 14:57:10,979 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-14-57-07.png
+2021-01-12 14:57:10,979 - BasePage.py[line:83] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 78, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 15:06:14,029 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 15:06:36,079 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 15:06:59,368 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 15:07:21,158 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 15:07:23,158 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 15:07:23,711 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 15:07:25,716 - BasePage.py[line:161] - INFO : <appium.webdriver.webelement.WebElement (session="acbc606d-02aa-4c90-89ef-644b8e40e378", element="4")>
+2021-01-12 15:07:25,716 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 15:07:28,987 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[12]/android.view.View')
+2021-01-12 16:37:35,885 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 16:37:57,243 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 16:38:20,474 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 16:38:42,434 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 16:38:44,435 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 16:38:45,012 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 16:38:46,836 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="cb20762a-3ca4-44c3-9f9e-ee31a5dc17ba", element="4")>
+2021-01-12 16:38:46,836 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 16:38:50,054 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("福袋")
+2021-01-12 17:46:21,245 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 17:46:23,296 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 17:46:26,153 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-17-46-23.png
+2021-01-12 17:47:15,905 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 17:47:16,974 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 17:48:58,409 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 17:49:20,598 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 17:49:43,832 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 17:50:05,918 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 17:50:07,919 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 17:50:08,472 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 17:50:29,961 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="81a0b0eb-1e4d-4883-8dc5-87f6223244bc", element="4")>
+2021-01-12 17:50:48,505 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 18:00:18,715 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:00:41,183 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:01:04,212 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 18:01:26,548 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 18:01:28,549 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 18:01:29,098 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 18:01:36,160 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 18:01:36,392 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("福袋")
+2021-01-12 18:01:40,436 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="5a1fd4aa-64ed-4bc4-a6cc-ad14a0a4bceb", element="5")>
+2021-01-12 18:02:50,816 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="5a1fd4aa-64ed-4bc4-a6cc-ad14a0a4bceb", element="6")>
+2021-01-12 18:02:50,856 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="5a1fd4aa-64ed-4bc4-a6cc-ad14a0a4bceb", element="7")>
+2021-01-12 18:26:48,608 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:27:10,609 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:27:12,610 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 18:27:12,720 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 18:27:14,214 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-27-12.png
+2021-01-12 18:27:15,611 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-27-14.png
+2021-01-12 18:27:15,611 - BasePage.py[line:83] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 78, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 18:28:36,448 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:37,663 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-36.png
+2021-01-12 18:28:38,663 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:40,306 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-38.png
+2021-01-12 18:28:41,306 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:42,899 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-41.png
+2021-01-12 18:28:43,901 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:45,453 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-43.png
+2021-01-12 18:28:46,454 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:47,943 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-46.png
+2021-01-12 18:28:48,944 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:50,531 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-48.png
+2021-01-12 18:28:51,532 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:53,105 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-51.png
+2021-01-12 18:28:54,105 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:55,670 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-54.png
+2021-01-12 18:28:56,671 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:28:58,271 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-56.png
+2021-01-12 18:28:59,271 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:00,849 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-28-59.png
+2021-01-12 18:29:01,851 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:03,476 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-01.png
+2021-01-12 18:29:04,476 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:06,139 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-04.png
+2021-01-12 18:29:07,139 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:08,732 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-07.png
+2021-01-12 18:29:09,732 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:11,358 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-09.png
+2021-01-12 18:29:12,359 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:13,912 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-12.png
+2021-01-12 18:29:14,912 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:16,354 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-14.png
+2021-01-12 18:29:17,355 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:18,915 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-17.png
+2021-01-12 18:29:19,916 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:21,498 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-19.png
+2021-01-12 18:29:22,498 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:24,062 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-22.png
+2021-01-12 18:29:25,063 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:26,639 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-25.png
+2021-01-12 18:29:27,639 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:29,361 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-27.png
+2021-01-12 18:29:30,361 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:31,877 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-30.png
+2021-01-12 18:29:32,877 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:34,432 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-32.png
+2021-01-12 18:29:35,432 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:37,034 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-35.png
+2021-01-12 18:29:38,035 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:39,580 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-38.png
+2021-01-12 18:29:40,580 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:42,172 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-40.png
+2021-01-12 18:29:43,174 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:44,763 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-43.png
+2021-01-12 18:29:45,763 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:47,325 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-45.png
+2021-01-12 18:29:48,327 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:49,868 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-48.png
+2021-01-12 18:29:50,868 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:52,395 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-50.png
+2021-01-12 18:29:53,396 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:54,984 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-53.png
+2021-01-12 18:29:55,984 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:29:57,521 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-55.png
+2021-01-12 18:29:58,522 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:00,156 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-29-58.png
+2021-01-12 18:30:01,157 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:02,769 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-01.png
+2021-01-12 18:30:03,770 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:05,331 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-03.png
+2021-01-12 18:30:06,331 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:07,890 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-06.png
+2021-01-12 18:30:08,890 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:10,530 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-08.png
+2021-01-12 18:30:11,531 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:13,290 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-11.png
+2021-01-12 18:30:14,291 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:15,964 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-14.png
+2021-01-12 18:30:16,965 - BasePage.py[line:39] - ERROR : 等待元素id可见异常!
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 34, in wait_eleVisible
+    WebDriverWait(self.driver, wait_times, poll_frequency).until(EC.visibility_of_element_located(locator))
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\support\wait.py", line 68, in until
+    end_time = time.time() + self._timeout
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2021-01-12 18:30:18,489 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-30-16.png
+2021-01-12 18:30:26,749 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:26,757 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:27,861 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-26.png
+2021-01-12 18:30:28,861 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:28,872 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:30,455 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-28.png
+2021-01-12 18:30:31,456 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:31,464 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:33,032 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-31.png
+2021-01-12 18:30:34,034 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:34,045 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:35,662 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-34.png
+2021-01-12 18:30:36,662 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:36,671 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:38,198 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-36.png
+2021-01-12 18:30:39,199 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:39,215 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:40,754 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-39.png
+2021-01-12 18:30:41,756 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:41,766 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:43,261 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-41.png
+2021-01-12 18:30:44,261 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:44,270 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:45,670 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-44.png
+2021-01-12 18:30:46,671 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:46,688 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:48,198 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-46.png
+2021-01-12 18:30:49,199 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:49,209 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:50,820 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-49.png
+2021-01-12 18:30:51,820 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:51,833 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:53,387 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-51.png
+2021-01-12 18:30:54,388 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:54,399 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:55,962 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-54.png
+2021-01-12 18:30:56,962 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:56,973 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:30:58,530 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-56.png
+2021-01-12 18:30:59,530 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:30:59,538 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:01,078 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-30-59.png
+2021-01-12 18:31:02,079 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:02,091 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:03,654 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-02.png
+2021-01-12 18:31:04,654 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:04,672 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:06,140 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-04.png
+2021-01-12 18:31:07,140 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:07,155 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:08,722 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-07.png
+2021-01-12 18:31:09,723 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:09,733 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:11,299 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-09.png
+2021-01-12 18:31:12,299 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:12,312 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:13,869 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-12.png
+2021-01-12 18:31:14,871 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:14,883 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:16,437 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-14.png
+2021-01-12 18:31:17,438 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:17,450 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:19,039 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-17.png
+2021-01-12 18:31:20,039 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:20,052 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:21,585 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-20.png
+2021-01-12 18:31:22,586 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:22,600 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:24,157 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-22.png
+2021-01-12 18:31:25,158 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:25,169 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:26,732 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-25.png
+2021-01-12 18:31:27,733 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:27,745 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:29,345 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-27.png
+2021-01-12 18:31:30,345 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:30,357 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:31,902 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-30.png
+2021-01-12 18:31:32,903 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:32,915 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:34,484 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-32.png
+2021-01-12 18:31:35,485 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:35,497 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:37,062 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-35.png
+2021-01-12 18:31:38,063 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:38,077 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:39,609 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-38.png
+2021-01-12 18:31:40,609 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:31:40,622 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:31:42,145 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-31-40.png
+2021-01-12 18:32:23,228 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:32:23,236 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:32:24,431 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-32-23.png
+2021-01-12 18:32:25,432 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:32:25,445 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:34:31,510 - BasePage.py[line:50] - INFO : com.ss.android.ugc.aweme:id/dqt 查找元素：id
+2021-01-12 18:34:31,522 - BasePage.py[line:53] - ERROR : com.ss.android.ugc.aweme:id/dqt 没有找到元素！！：id
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 18:34:33,148 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\com.ss.android.ugc.aweme:id/dqt_2021-01-12-18-34-31.png
+2021-01-12 18:34:56,838 - BasePage.py[line:47] - INFO :  查找元素：('id', 'com.ss.android.ugc.aweme:id/dqt')
+2021-01-12 18:34:58,722 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('id', 'com.ss.android.ugc.aweme:id/dqt')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 18:35:00,381 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-18-34-58.png
+2021-01-12 18:35:01,381 - BasePage.py[line:47] - INFO :  查找元素：('id', 'com.ss.android.ugc.aweme:id/dqt')
+2021-01-12 18:35:01,522 - BasePage.py[line:53] - ERROR :  没有找到元素！！：('id', 'com.ss.android.ugc.aweme:id/dqt')
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 48, in get_element
+    return self.driver.find_element(*locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+2021-01-12 18:47:10,862 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:47:32,468 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 18:47:55,435 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 18:48:17,105 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 18:48:19,106 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 18:48:19,617 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 18:48:26,819 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 18:48:27,072 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("福袋")
+2021-01-12 18:48:31,106 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="69cde25f-5b02-4bd0-bb10-afdeec853627", element="5")>
+2021-01-12 18:49:42,656 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="69cde25f-5b02-4bd0-bb10-afdeec853627", element="6")>
+2021-01-12 18:49:42,794 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="69cde25f-5b02-4bd0-bb10-afdeec853627", element="7")>
+2021-01-12 19:17:29,320 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 19:17:51,056 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 19:18:14,002 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 19:18:35,837 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 19:18:37,839 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 19:18:38,398 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 19:18:45,491 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 19:18:45,740 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("福袋")
+2021-01-12 19:18:49,774 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="738c5669-0ff4-4515-87df-86afb064e081", element="5")>
+2021-01-12 19:18:49,799 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="738c5669-0ff4-4515-87df-86afb064e081", element="6")>
+2021-01-12 19:18:49,818 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="738c5669-0ff4-4515-87df-86afb064e081", element="7")>
+2021-01-12 19:19:04,136 - BasePage.py[line:50] - INFO :  查找元素：/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[51]
+2021-01-12 19:19:04,146 - BasePage.py[line:53] - ERROR :  没有找到元素！！：/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[51]
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 51, in get_element
+    return self.driver.find_element_by_android_uiautomator(locator)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\extensions\search_context\android.py", line 146, in find_element_by_android_uiautomator
+    return self.find_element(by=MobileBy.ANDROID_UIAUTOMATOR, value=uia_string)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\webdriver.py", line 281, in find_element
+    'value': value})['value']
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Users\ai013\AppData\Local\Programs\Python\Python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: String index out of range: -1
+
+2021-01-12 19:19:05,481 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-19-19-04.png
+2021-01-12 19:19:06,920 - BasePage.py[line:245] - INFO : 咔嚓 ->H:\testframe\AppAutoTest\Outputs\ScreenShot\_2021-01-12-19-19-05.png
+2021-01-12 19:19:06,920 - BasePage.py[line:83] - ERROR : 元素点击操作失败！！！
+Traceback (most recent call last):
+  File "H:\testframe\AppAutoTest\common\BasePage.py", line 78, in click_element
+    ele.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+2021-01-12 19:21:18,192 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 19:21:39,774 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.ImageView[@content-desc="更多"]')
+2021-01-12 19:22:45,407 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 19:23:07,210 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '//android.widget.RelativeLayout[@content-desc="企业服务中心"]')
+2021-01-12 19:23:09,211 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("主播中心")
+2021-01-12 19:23:09,796 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("主播中心")
+2021-01-12 19:23:16,989 - BasePage.py[line:50] - INFO :  查找元素：new UiSelector().textContains("福袋")
+2021-01-12 19:23:17,223 - BasePage.py[line:79] - INFO :  点击元素：new UiSelector().textContains("福袋")
+2021-01-12 19:23:21,258 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="be7962f0-383a-4b06-b0e4-2cd6a1e0bbd1", element="5")>
+2021-01-12 19:23:21,288 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="be7962f0-383a-4b06-b0e4-2cd6a1e0bbd1", element="6")>
+2021-01-12 19:23:21,317 - BasePage.py[line:165] - INFO : <appium.webdriver.webelement.WebElement (session="be7962f0-383a-4b06-b0e4-2cd6a1e0bbd1", element="7")>
+2021-01-12 19:23:35,743 - BasePage.py[line:47] - INFO :  查找元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[50]')
+2021-01-12 19:23:36,171 - BasePage.py[line:79] - INFO :  点击元素：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[50]')
