@@ -40,7 +40,7 @@ class ProductListPage(BasePage):
             self.save_screenshot(doc)
             self.swipe_direction('up', 2)
             num += 1
-            if self.eleExist(loc.productlist_buttom):
+            if self.is_eleExist(loc.productlist_buttom):
                 self.save_screenshot(doc)
                 break
 

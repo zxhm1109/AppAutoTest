@@ -9,6 +9,10 @@
 import os
 import subprocess
 import logging
+from appium import webdriver
+from common.BaseAdb import AndroidDebugBridge
+
+
 
 def getPhoneInfo(devices):
     """获取手机基本信息"""
@@ -67,6 +71,20 @@ def get_app_pix(devices):
     """获取设备分辨率"""
     result = os.popen("adb -s " + devices + " shell wm size", "r")
     return result.readline().split("Physical size:")[1]
+
+
+def start_device():
+    # 启动android服务
+    platformVersion = AndroidDebugBridge().get_android_version()
+    # devicename = AndroidDebugBridge().get_devices()[0]
+    caps = {}
+    caps["platformName"] = "Android"
+    caps["platformVersion"] = platformVersion
+    caps["deviceName"] = "d8bec445"
+    caps["appPackage"] = "cn.sancell.ssbm"
+    caps["appActivity"] = "cn.sanshaoxingqiu.ssbm.module.splash.LaunchActivity"
+    driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
+    return driver
 
 
 if __name__ == "__main__":
