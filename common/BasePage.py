@@ -179,7 +179,7 @@ class BasePage(object):
                    right: 从左往右
                """
         # 控制上下滑动距离
-        dic = {9: 0.75, 8: 0.7, 7: 0.7, 6: 0.65, 5: 0.6, 4: 0.55, 3: 0.5, 2: 0.45, 1: 0.4}
+        dic = {9: 0.8, 8: 0.7, 7: 0.7, 6: 0.65, 5: 0.6, 4: 0.55, 3: 0.5, 2: 0.45, 1: 0.4}
         if distance > 9:
             distances = 0.75
         else:
@@ -193,9 +193,8 @@ class BasePage(object):
         center_x = screen_width * 0.5
         # 屏幕顶部banner图片位置
         center_y = screen_height * 0.20
-
         top_x = center_x
-        top_y = screen_height * 0.35
+        top_y = screen_height * 0.24
         down_x = center_x
         down_y = screen_height * distances
         left_x = screen_width * 0.1
@@ -205,7 +204,7 @@ class BasePage(object):
 
         for i in range(num):
             if direction == "up":
-                self.driver.swipe(down_x, down_y, top_x, top_y, 2000)
+                self.driver.swipe(down_x, down_y, top_x, top_y, 1500)
             elif direction == "down":
                 self.driver.swipe(top_x, top_y, down_x, down_y, 2000)
             elif direction == "left":

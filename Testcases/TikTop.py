@@ -51,6 +51,9 @@ Excel_data = {}
 
 list_data = []
 
+top_ele = (BY.XPATH,
+           "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[8]/android.view.View[7]")
+
 
 class Test_TikTop:
     """
@@ -270,7 +273,6 @@ class Test_TikTop:
                                               "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[6]".format(
                                                   index))
 
-
                             confirm_ele = (BY.XPATH,
                                            "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[2]/android.view.View[5]".format(
                                                int(lnum) + 8))
@@ -293,7 +295,8 @@ class Test_TikTop:
                                     self.driver.find_element(*confirm_ele).click()
                                     logger.info('发货成功：{},{},{}'.format(View_name_ele, View_phone_ele, orderid))
                                     self.basep.sleep(1)
-                                    self.basep.swipe_direction('down', 8)
+                                    if swip_num > 1:
+                                        self.driver.find_element(*top_ele).click()
                                     break
                                 except Exception:
                                     self.basep.swipe_direction('up', swip_num)
@@ -315,6 +318,7 @@ class Test_TikTop:
         ExcelUtils().ReadExcel(filename)
         # self.To_luckybag()
         input('\n\n----------------请先确定物流是否选择正确，点击进入福袋列表后Enter 继续！-----------\n\n')
+        self.basep.swipe_direction('up', 3)
         self.basep.sleep(1)
         ff = filename.split('-')[-1].split('.')[0]
         parms = ff[:4] + '/' + ff[4:6] + '/' + ff[6:]
