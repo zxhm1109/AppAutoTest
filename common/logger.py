@@ -13,7 +13,6 @@ from functools import wraps
 class Mylog:
     log_path = pathUtils().get_log_path()
 
-
     def __init__(self, name=' '):
         '''
             指定保存日志的文件路径，日志级别，以及调用文件

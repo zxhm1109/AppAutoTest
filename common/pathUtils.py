@@ -47,7 +47,7 @@ class pathUtils:
 
     def get_yaml_path(self):
         # yaml配置文件路径
-        yaml_path = os.path.join(self.project_path, 'Data', 'Base_data.yaml')
+        yaml_path = os.path.join(self.project_path, 'Testdatas', 'Deployer.yaml')
         return yaml_path
 
     def get_screenShot_path(self, doc):

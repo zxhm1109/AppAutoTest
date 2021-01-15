@@ -41,7 +41,6 @@ class BasePage(object):
             raise
 
     def get_element(self, locator, doc=''):
-
         try:
             if isinstance(locator, tuple):
                 self.logger.info('{} 查找元素：{}'.format(doc, locator))
@@ -80,7 +79,7 @@ class BasePage(object):
             time.sleep(1)
         except:
             self.save_screenshot(doc)
-            self.logger.exception('元素点击操作失败！！！')
+            self.logger.exception('元素点击操作失败！！！[{}]'.format(locator))
             raise
 
     def click_tap(self, tap):
@@ -89,6 +88,7 @@ class BasePage(object):
     def input_text(self, locator, text='', doc=''):
         ele = self.get_element(locator, doc)
         try:
+            self.sleep(1)
             ele.send_keys(text)
             self.logger.info('{}:元素：{} 输入内容：{}'.format(doc, locator, text))
         except:
