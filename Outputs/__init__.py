@@ -4,3 +4,9 @@
 # @Datetime  : 2020/7/31 11:47
 # @File      : __init__.py.py
 # @desc      :
+
+
+a=100
+
+for i in reversed(range(a)):
+    print(i+8)

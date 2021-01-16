@@ -54,6 +54,8 @@ list_data = []
 top_ele = (BY.XPATH,
            "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[8]/android.view.View[7]")
 
+logger.info('开始抖音发货')
+
 
 class Test_TikTop:
     """
@@ -133,7 +135,7 @@ class Test_TikTop:
                 # 划动到指定福袋位置
                 if self.basep.is_eleExist(is_luckybag_num, 0):
                     self.basep.swipe_find_ele(luckybag_ctime, 'is', 'up', method=0)
-                self.basep.swipe_direction('up', 5)
+
                 # 获取当前所有福袋名称、创建时间、发放数量
                 LuckBagRecord = []
                 dunm = 0
@@ -153,7 +155,6 @@ class Test_TikTop:
                 # 检查福袋中奖名单是否有重复数据
                 # ExcelUtils().check_data()
                 RWConfig().write_config('TikTop', str(dunm + 1), str(lbr)) if dunm else RWConfig().write_config('TikTop', '1', str(luckybaglist))
-
             else:
                 logger.error('parms缺失！！！')
             ii = RWConfig().read_config_options_dict('TikTop')
@@ -170,7 +171,6 @@ class Test_TikTop:
 
     def LuckyBag_list(self, indexs, num, ini):
         # 遍历福袋列表，获得点击位置，点击进入福袋：parms=福袋创建时间 -1，parms=福袋名称 -2（福袋名称存在重复）
-        ccnum = 1
         for lb in indexs:
             logger.info('---------->  开始执行福袋：{}   <--------'.format(ini[int(lb / 3)]))
             click_ele = (BY.XPATH,
@@ -193,21 +193,21 @@ class Test_TikTop:
                     self.click(click_ele)
                     WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(check_ele))
                     self.basep.sleep(2)
-                    self.get_plist(name, timec)
+
+                    # 更新获取全部收货人 & 从最后一个开始发货
+                    # self.get_plist(luckybag_name, timecc)
+                    self.newget_plist(luckybag_name, timecc)
+
                     break
                 except Exception:
-                    if ccnum:
-                        self.basep.swipe_direction('up', 1) if num else self.basep.swipe_direction('down', 1)
-                        ccnum -= 1
-                    else:
-                        self.basep.swipe_direction('down', 1)
+                    self.basep.swipe_direction('up', 1, 8, 1000) if num else self.basep.swipe_direction('down', 1, 7, 1000)
             lnum = int(ini[int(lb / 3)][0].split(':')[-1].strip())
             print('@@@@@@@@@@@@@@@@@@@@@@    {}'.format(lnum))
             self.consingee(luckybag_name, timecc, lnum)
 
     def get_plist(self, name, timec):
         # 获取 收货人列表
-        self.basep.sleep(3)
+        self.basep.sleep(2)
         logger.info('—————————————> 开始获取福袋 {} - {} 的收货人信息'.format(name, timec))
         eless = self.driver.find_elements_by_class_name('android.view.View')
         consignee_list = []
@@ -242,25 +242,133 @@ class Test_TikTop:
             logger.info('-----更新list_data数据！ 更新数据量:{}'.format(len(list_data)))
             return True
 
-    def consingee(self, name, timec, lnum):
+    def newget_plist(self, name, timec):
+        # 获取 收货人列表
+        self.basep.sleep(2)
+        logger.info('—————————————> 开始获取福袋 {} - {} 的收货人信息'.format(name, timec))
+        eless = self.driver.find_elements_by_class_name('android.view.View')
+        consignee_list = []
+        for rele in eless:
+            text = rele.text
+            consignee_list.append(text)
+
+        # 去除空白字符、福袋信息和确定、取消
+        consignee = list(filter(None, consignee_list))
+        new_consignee = consignee[7:] if '人获得福袋）' in consignee[6] and '上传快递单' in consignee[-1] else consignee[7:-2]
+        logger.debug('抖音福袋:{} -- 收货人列表:{}'.format(name, new_consignee))
+        # 根据每个收货人给list分组
+        data = []
+        datalist = []
+        for ii in new_consignee:
+            if '上传快递单' == ii or '提醒一下' == ii or '收货信息：逾期未填写' == ii or '修改快递单' == ii:
+                datalist.append(ii)
+                data.append(datalist)
+                datalist = []
+            else:
+                datalist.append(ii)
+        logger.debug('处理后收货人数据：{}'.format(data))
+        global list_data
+        if data == list_data:
+            logger.info('-----list_data不需要更新，现有数据量{}'.format(len(list_data)))
+            return False
+        else:
+            list_data = data
+            logger.info('-----更新list_data数据！ 更新数据量:{}'.format(len(list_data)))
+            return True
+
+    def newconsingee(self, name, timec, lnum):
 
         # 遍历中奖人：姓名、手机号；获取快递单ID，点击并填入快递单ID
-        swip_num = 1
+        bum = 0
+        global list_data
+        data = list_data
+        if '上传快递单' not in str(data):
+            logger.info('没有可上传快递单的订单！！')
+        else:
+            for yy in reversed(range(len(data))):
+                swip_num = 1
+                index = yy + 8
+                View_name_ele = self.driver.find_element(BY.XPATH,
+                                                         "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                             index, 3)).text
+                View_phone_ele = self.driver.find_element(BY.XPATH,
+                                                          "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                              index, 4)).text
+
+                View_click_ele = (BY.XPATH,
+                                  "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[6]".format(
+                                      index))
+
+                confirm_ele = (BY.XPATH,
+                               "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[2]/android.view.View[5]".format(
+                                   int(lnum) + 8))
+                click_name_ele = self.driver.find_element(*View_click_ele).text
+
+                wuliuxinxi = (BY.CLASS_NAME, "android.widget.EditText")
+                if click_name_ele == '上传快递单':
+                    orderid = ExcelUtils().GetOrderId(phone=View_phone_ele[4:], name=View_name_ele[4:])
+                    logger.info('查找收货人：{}\n\t\t执行发货：{},{} \n\t\t发货内容：{}'.format(data[yy], View_name_ele, View_phone_ele, orderid))
+                else:
+                    orderid = (None, None)
+                    logger.info('该订单无法发货')
+                while orderid[0]:
+                    try:
+                        self.basep.sleep(2)
+                        logger.info('第{}次点击上传快递单：{}'.format(swip_num, View_click_ele[1][-30:]))
+                        self.driver.find_element(*View_click_ele).click()
+                        self.basep.sleep(1)
+                        WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
+                        # self.basep.input_text(wuliuxinxi, orderid[0])
+                        self.driver.find_element(*wuliuxinxi).send_keys(str(orderid[0]))
+                        # 手动选择快递公司
+                        self.basep.sleep(2)
+                        self.driver.find_element(*confirm_ele).click()
+                        self.basep.sleep(1)
+                        self.driver.find_element(*confirm_ele).click()
+                        logger.info('发货成功：{},{},{}'.format(View_name_ele, View_phone_ele, orderid))
+                        self.basep.sleep(1)
+                        # if index < 20 and swip_num > 2:
+                        #     self.driver.find_element(*top_ele).click()
+                        # else:
+                        #     self.basep.swipe_direction('up', num=1, distance=1)
+                        self.basep.swipe_direction('down', num=1, distance=1, ctime=1000)
+                        break
+                    except Exception:
+                        if swip_num > 50:
+                            raise TimeoutError
+                        elif swip_num / 2 == 0:
+                            self.basep.swipe_direction('up', num=swip_num, distance=8, ctime=1000)
+                            swip_num += 1
+                        else:
+                            self.basep.swipe_direction('down', num=swip_num, distance=8, ctime=1000)
+                            swip_num += 1
+                else:
+                    data[yy].append('Excel中未找到该收货人')
+                    logger.info('Excel中未找到该收货人')
+                data[yy].append(orderid)
+                bum += 1
+
+        logger.info('—————————————> 福袋 {} - {} 发货[{}] 处理完毕\n处理数据：{}'.format(name, timec, bum, list_data))
+        self.basep.back()
+
+    def consingee(self, name, timec, lnum):
+        # 遍历中奖人：姓名、手机号；获取快递单ID，点击并填入快递单ID
         bum = 0
         for iiii in range(lnum):
             self.get_plist(name, timec)
             global list_data
             data = list_data
             if '上传快递单' not in str(data):
-                list_data = '没有可上传快递单的订单！！'
+                logger.info('没有可上传快递单的订单！！')
                 break
             for yy in range(len(data)):
                 if len(data[yy]) > 3:
                     if data[yy][-1] == '上传快递单':
+                        swip_num = 1
                         cphone = str(data[yy][2][4:]).strip()
                         cname = str(data[yy][1][4:]).strip()
                         orderid = ExcelUtils().GetOrderId(phone=cphone, name=cname)
-                        if orderid:
+                        if orderid[0]:
                             index = yy + 8
                             View_name_ele = self.driver.find_element(BY.XPATH,
                                                                      "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
@@ -282,35 +390,39 @@ class Test_TikTop:
                             logger.info('查找收货人：{}\n\t\t执行发货：{},{} \n\t\t发货内容：{}'.format(data[yy], View_name_ele, View_phone_ele, orderid))
                             while True:
                                 try:
-                                    self.basep.sleep(1)
+                                    self.basep.sleep(2)
+                                    logger.info('第{}次点击上传快递单：{}'.format(swip_num, View_click_ele[1][-30:]))
                                     self.driver.find_element(*View_click_ele).click()
-                                    logger.info('点击上传快递单：{}'.format(View_click_ele[1]))
                                     self.basep.sleep(1)
                                     WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
-                                    self.basep.input_text(wuliuxinxi, orderid[0])
+                                    # self.basep.input_text(wuliuxinxi, orderid[0])
+                                    self.driver.find_element(*wuliuxinxi).send_keys(str(orderid[0]))
                                     # 手动选择快递公司
-                                    self.basep.sleep(3)
+                                    self.basep.sleep(2)
                                     self.driver.find_element(*confirm_ele).click()
                                     self.basep.sleep(1)
                                     self.driver.find_element(*confirm_ele).click()
                                     logger.info('发货成功：{},{},{}'.format(View_name_ele, View_phone_ele, orderid))
                                     self.basep.sleep(1)
-                                    if swip_num > 1:
+                                    if index < 20 and swip_num > 2:
                                         self.driver.find_element(*top_ele).click()
+                                    else:
+                                        self.basep.swipe_direction('up', num=1, distance=1)
                                     break
                                 except Exception:
-                                    self.basep.swipe_direction('up', swip_num)
+                                    self.basep.swipe_direction('up', num=swip_num, distance=8, ctime=1000)
                                     swip_num += 1
                             data[yy].append(orderid)
                             bum += 1
                         else:
-                            data[yy].append(orderid)
-                            logger.info('该订单已发货：{}'.format(data[yy]))
+                            data[yy].append('Excel中未找到该收货人')
+                            logger.info('Excel中未找到该收货人')
                     else:
-                        data[yy].append('Excel中未找到该收货人')
+                        data[yy].append('该订单无法发货')
+                        logger.info('该订单无法发货')
                 else:
                     data[yy].append('App收货信息缺失')
-
+                    logger.info('App收货信息缺失')
         logger.info('—————————————> 福袋 {} - {} 发货[{}] 处理完毕\n处理数据：{}'.format(name, timec, bum, list_data))
         self.basep.back()
 
@@ -318,11 +430,12 @@ class Test_TikTop:
         ExcelUtils().ReadExcel(filename)
         # self.To_luckybag()
         input('\n\n----------------请先确定物流是否选择正确，点击进入福袋列表后Enter 继续！-----------\n\n')
-        self.basep.swipe_direction('up', 3)
+        self.basep.swipe_direction('up', distance=7, num=3, ctime=1000)
         self.basep.sleep(1)
         ff = filename.split('-')[-1].split('.')[0]
         parms = ff[:4] + '/' + ff[4:6] + '/' + ff[6:]
         # parms = '2020/12/25 11:43'
+
         self.LuckyBag(parms=parms)
 
     def click(self, loc):
@@ -384,7 +497,7 @@ class ExcelUtils:
         3、缺少福袋信息（福袋名称、创建/发布时间）
         :return: ｛orderID:｛phone,name｝,orderID2:{phone,name}...｝
         """
-        fm = os.path.join('C:\\Users\\ai013\Desktop\WorkFile\TestFile\TikTopExpress\\', filename)
+        fm = os.path.join('D:\TikTopExpress\\', filename)
         # 读取 Excel
         f = xlrd.open_workbook(fm)
         ws = f.sheet_by_index(0)

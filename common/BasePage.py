@@ -168,7 +168,7 @@ class BasePage(object):
             # self.logger.error('{}:该元素不存在!'.format(*locator))
             return False
 
-    def swipe_direction(self, direction, num=1, distance=9):
+    def swipe_direction(self, direction, num=1, distance=9, ctime=2000):
 
         """
                屏幕滑动一次
@@ -194,7 +194,7 @@ class BasePage(object):
         # 屏幕顶部banner图片位置
         center_y = screen_height * 0.20
         top_x = center_x
-        top_y = screen_height * 0.24
+        top_y = screen_height * 0.20
         down_x = center_x
         down_y = screen_height * distances
         left_x = screen_width * 0.1
@@ -204,16 +204,16 @@ class BasePage(object):
 
         for i in range(num):
             if direction == "up":
-                self.driver.swipe(down_x, down_y, top_x, top_y, 1500)
+                self.driver.swipe(down_x, down_y, top_x, top_y, ctime)
             elif direction == "down":
-                self.driver.swipe(top_x, top_y, down_x, down_y, 2000)
+                self.driver.swipe(top_x, top_y, down_x, down_y, ctime)
             elif direction == "left":
-                self.driver.swipe(right_x, right_y, left_x, left_y, 2000)
+                self.driver.swipe(right_x, right_y, left_x, left_y, ctime)
             elif direction == "right":
-                self.driver.swipe(left_x, left_y, right_x, right_y, 2000)
+                self.driver.swipe(left_x, left_y, right_x, right_y, ctime)
             else:
                 raise Exception("请确定划动方向！ up、left、right、down")
-            time.sleep(1)
+            time.sleep(0.5)
 
         # """屏幕左划"""
         # size = self.driver.get_window_size()
