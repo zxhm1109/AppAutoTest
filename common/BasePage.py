@@ -82,8 +82,10 @@ class BasePage(object):
             self.logger.exception('元素点击操作失败！！！[{}]'.format(locator))
             raise
 
-    def click_tap(self, tap):
-        self.driver.tap([(tap[0], tap[1])], 200)
+    def click_tap(self, tap, num=1):
+        for i in range(num):
+            self.driver.tap([(tap[0], tap[1])], 200)
+            self.sleep(0.5)
 
     def input_text(self, locator, text='', doc=''):
         ele = self.get_element(locator, doc)
@@ -97,10 +99,6 @@ class BasePage(object):
             raise
 
     def get_text(self, locator, doc=''):
-        from appium.webdriver.common.mobileby import By
-        if isinstance(locator[0], str):
-            if locator[0] == 'By.id':
-                locator = (By.ID, locator[1])
         ele = self.get_element(locator, doc)
         try:
             text = ele.text
@@ -179,7 +177,8 @@ class BasePage(object):
                    right: 从左往右
                """
         # 控制上下滑动距离
-        dic = {9: 0.8, 8: 0.7, 7: 0.7, 6: 0.65, 5: 0.6, 4: 0.55, 3: 0.5, 2: 0.45, 1: 0.4}
+        dic = {9: 0.8, 8: 0.7, 7: 0.7, 6: 0.65, 5: 0.6, 4: 0.55, 3: 0.5, 2: 0.45, 1: 0.4, 0.9: 0.38, 0.8: 0.35, 0.7: 0.32, 0.5: 0.3, 0.4: 0.28,
+               0.1: 0.25}
         if distance > 9:
             distances = 0.75
         else:
@@ -249,6 +248,26 @@ class BasePage(object):
         for i in range(num):
             self.driver.back()
             self.sleep(0.5)
+
+    def clean_text(self, text):
+        '''清空文本框方法的封装'''
+        self.driver.keyevent(123)  # 123代表光标移动到末尾键
+        for i in range(0, len(text)):
+            self.driver.keyevent(67)  # 67退格键
+
+    def del_input(self, loc):
+        '''删除文本框内容'''
+
+        get_text = self.get_text(loc)
+        self.clean_text(get_text)
+
+    def check_Delete(self, loc):
+        '''检查文本框是否删除成功'''
+        get_text = self.get_text(loc)
+        if get_text == "":
+            return True
+        else:
+            return False
 
     @staticmethod
     def sleep(seconds=5.0):

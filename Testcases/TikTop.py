@@ -13,6 +13,7 @@ from common.logger import Mylog
 from common.DoConfig import RWConfig
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
 
 logger = Mylog('TikTop.py').getlog()
 
@@ -48,6 +49,7 @@ upload_orderid = (BY.XPATH, '')
 upload_orderid_comfirm = ()
 
 Excel_data = {}
+HuanfaData = {}
 
 list_data = []
 
@@ -55,6 +57,11 @@ top_ele = (BY.XPATH,
            "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[8]/android.view.View[7]")
 
 logger.info('开始抖音发货')
+
+indexs = []
+num = 0
+ini = ''
+newconsingee_off = True
 
 
 class Test_TikTop:
@@ -118,6 +125,7 @@ class Test_TikTop:
         :return: 收货人列表、指定福袋以上的所有福袋信息列表
         """
         # 获取福袋
+        global indexs, num, ini
         ii = RWConfig().read_config_options_dict('TikTop')
         index = []
         if ii:
@@ -127,7 +135,9 @@ class Test_TikTop:
             for data in range(len(redata)):
                 if parms in redata[data][2]:
                     index.append(data * 3)
-            self.LuckyBag_list(index[::-1], 1, redata)
+            indexs = index[::-1]
+            num = 1
+            ini = redata
         else:
             if parms:
                 luckybag_ctime = 'new UiSelector().textContains("{}")'.format(parms)
@@ -167,12 +177,18 @@ class Test_TikTop:
                     index.append(data * 3)
             for i in index:
                 print(redata[i])
-            self.LuckyBag_list(index[::-1], 0, redata)
+            indexs = index[::-1]
+            num = 1
+            ini = redata
 
-    def LuckyBag_list(self, indexs, num, ini):
+        self.LuckyBag_list()
+
+    def LuckyBag_list(self):
+        global indexs, num, ini
         # 遍历福袋列表，获得点击位置，点击进入福袋：parms=福袋创建时间 -1，parms=福袋名称 -2（福袋名称存在重复）
+        fail = []
         for lb in indexs:
-            logger.info('---------->  开始执行福袋：{}   <--------'.format(ini[int(lb / 3)]))
+
             click_ele = (BY.XPATH,
                          '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[{}]'.format(
                              lb + 2))
@@ -182,28 +198,45 @@ class Test_TikTop:
             timec = (BY.XPATH,
                      '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View/android.view.View[{}]'.format(
                          lb + 3))
+            luckybag_name = self.driver.find_element(*name).text
+            timecc = self.driver.find_element(*timec).text
             check_ele = (BY.XPATH,
                          '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]')
 
             while True:
                 try:
-                    WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(click_ele))
-                    luckybag_name = self.driver.find_element(*name).text
-                    timecc = self.driver.find_element(*timec).text
                     self.click(click_ele)
                     WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(check_ele))
-                    self.basep.sleep(2)
-
-                    # 更新获取全部收货人 & 从最后一个开始发货
-                    # self.get_plist(luckybag_name, timecc)
-                    self.newget_plist(luckybag_name, timecc)
-
+                    self.basep.sleep(1)
                     break
                 except Exception:
-                    self.basep.swipe_direction('up', 1, 8, 1000) if num else self.basep.swipe_direction('down', 1, 7, 1000)
+                    if num:
+                        self.basep.swipe_direction('down', 1, 7, 1000)
+                    else:
+                        self.basep.swipe_direction('up', 1, 7, 1000)
+
             lnum = int(ini[int(lb / 3)][0].split(':')[-1].strip())
-            print('@@@@@@@@@@@@@@@@@@@@@@    {}'.format(lnum))
-            self.consingee(luckybag_name, timecc, lnum)
+            print('@@@@@@@@@@@@@@@@@@@@@@    {} == {}'.format(lnum, str(luckybag_name)))
+
+            # self.consingee(luckybag_name, timecc, lnum)
+            # 更新从最后一个开始发货
+            for i in range(8):
+                try:
+                    logger.info('[{}]---------->  开始执行福袋：{} - {}  <--------'.format(i + 1, luckybag_name, timecc))
+                    self.newconsingee(luckybag_name, timecc, lnum)
+                    self.newget_plist(luckybag_name, timecc, 0)
+                    self.basep.sleep(2)
+                    self.basep.back()
+                    break
+                except RuntimeError:
+                    pass
+            else:
+                logger.error('{} - {} 八次重试依然失败!!!结束该福袋,继续下一个福袋!'.format(luckybag_name, timecc))
+                fail.append([luckybag_name, timecc])
+                self.newget_plist(luckybag_name, timecc, 0)
+                self.basep.sleep(2)
+                self.basep.back()
+        logger.info('执行结束! 失败福袋:{}'.format(fail))
 
     def get_plist(self, name, timec):
         # 获取 收货人列表
@@ -242,114 +275,195 @@ class Test_TikTop:
             logger.info('-----更新list_data数据！ 更新数据量:{}'.format(len(list_data)))
             return True
 
-    def newget_plist(self, name, timec):
+    def newget_plist(self, name, timec, iszx=1):
         # 获取 收货人列表
         self.basep.sleep(2)
-        logger.info('—————————————> 开始获取福袋 {} - {} 的收货人信息'.format(name, timec))
-        eless = self.driver.find_elements_by_class_name('android.view.View')
         consignee_list = []
+        try:
+            a = eval(RWConfig().read_config_options_dict('Rett')[str(timec).replace(' ', '').replace('/', '').replace(':', '')])
+        except KeyError:
+            a = ['111']
+        if a[-1] == '确定':
+            logger.info('{}:没有可处理的订单!'.format(timec))
+            return False, False
+        logger.info('{} - {}   开始加载收货人列表!!!!!!!'.format(name, timec))
+        eless = self.driver.find_elements_by_class_name('android.view.View')
         for rele in eless:
-            text = rele.text
-            consignee_list.append(text)
-
-        # 去除空白字符、福袋信息和确定、取消
-        consignee = list(filter(None, consignee_list))
-        new_consignee = consignee[7:] if '人获得福袋）' in consignee[6] and '上传快递单' in consignee[-1] else consignee[7:-2]
-        logger.debug('抖音福袋:{} -- 收货人列表:{}'.format(name, new_consignee))
-        # 根据每个收货人给list分组
-        data = []
-        datalist = []
-        for ii in new_consignee:
-            if '上传快递单' == ii or '提醒一下' == ii or '收货信息：逾期未填写' == ii or '修改快递单' == ii:
-                datalist.append(ii)
-                data.append(datalist)
-                datalist = []
+            text1 = rele.text
+            consignee_list.append(text1)
+            if iszx:
+                if '上传快递单' == str(text1).strip():
+                    consignee = list(filter(None, consignee_list))
+                    lphone = consignee[-3][4:]
+                    lname = consignee[-4][4:]
+                    a, b = ExcelUtils().GetOrderId(lphone, lname)
+                    if b:
+                        logger.info('{}:有未处理的订单!'.format(timec))
+                        return True, len(consignee)
+                    else:
+                        logger.info('{}:手机号:{} 没有匹配到运单号!'.format(timec, lphone))
             else:
-                datalist.append(ii)
-        logger.debug('处理后收货人数据：{}'.format(data))
-        global list_data
-        if data == list_data:
-            logger.info('-----list_data不需要更新，现有数据量{}'.format(len(list_data)))
-            return False
+                pass
         else:
-            list_data = data
-            logger.info('-----更新list_data数据！ 更新数据量:{}'.format(len(list_data)))
-            return True
+            consignee = list(filter(None, consignee_list))
+            RWConfig().write_config('Rett', str(timec).replace(' ', '').replace('/', '').replace(':', ''), str(consignee))
+            logger.info('{}:没有可处理的订单!'.format(timec))
+            return False, False
 
     def newconsingee(self, name, timec, lnum):
 
         # 遍历中奖人：姓名、手机号；获取快递单ID，点击并填入快递单ID
+        unfind = 0
         bum = 0
-        global list_data
-        data = list_data
-        if '上传快递单' not in str(data):
-            logger.info('没有可上传快递单的订单！！')
-        else:
-            for yy in reversed(range(len(data))):
-                swip_num = 1
+        result = {'succeed': [], 'fail': []}
+        orderid = [0, 0]
+        aaa, bbb = self.newget_plist(name, timec)
+        top = 0
+        if aaa:
+            if (bbb // 5) < (lnum // 2):
+                logger.info('{}  从头部开始执行!!'.format(bbb // 5))
+                self.basep.swipe_direction('down', 10, 9, 500)
+            else:
+                logger.info('{}  从尾部开始执行!!'.format(bbb // 5))
+                self.basep.swipe_direction('up', 10, 9, 500)
+                top = 1
+            for yy in (reversed(range(lnum)) if top else (range(lnum))):
                 index = yy + 8
-                View_name_ele = self.driver.find_element(BY.XPATH,
-                                                         "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
-                                                             index, 3)).text
-                View_phone_ele = self.driver.find_element(BY.XPATH,
-                                                          "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
-                                                              index, 4)).text
+                View_nickname_ele = 'undefined'
+                try:
+                    View_nickname_ele = self.driver.find_element(BY.XPATH,
+                                                                 "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                                     index, 2)).text
+                    View_click_ele = (BY.XPATH,
+                                      "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[6]".format(
+                                          index))
+                    click_name_ele = self.driver.find_element(*View_click_ele).text
 
-                View_click_ele = (BY.XPATH,
-                                  "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[6]".format(
-                                      index))
+                except NoSuchElementException:
+                    unfind += 1
+                    logger.info('{} - {}:用户发货信息缺失,无法发货!!'.format(index, View_nickname_ele))
+                    if unfind > 1:
+                        self.basep.swipe_direction('down', num=1, distance=0.7, ctime=1000) if top else self.basep.swipe_direction('up', 1, 0.7, 1000)
+                    continue
+                print('asdsads22222222222222adas:' + str(click_name_ele), type(click_name_ele))
+                if '上传快递单' in click_name_ele:
+                    View_name_ele = self.driver.find_element(BY.XPATH,
+                                                             "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                                 index, 3)).text
+                    View_phone_ele = self.driver.find_element(BY.XPATH,
+                                                              "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                                  index, 4)).text
+                    View_addr_ele = self.driver.find_element(BY.XPATH,
+                                                             '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[5]'.format(
+                                                                 index)).text
+                    orderid = ExcelUtils().GetOrderId(phone=View_phone_ele[4:], name=View_name_ele[4:])
+                    logger.info('[{}] 执行发货：{},{} \n\t\t\t\t发货内容：{}'.format(index, View_name_ele, View_phone_ele, orderid))
+                elif '韵达速递' in click_name_ele:  # 修改快递单
+                    View_name_ele = self.driver.find_element(BY.XPATH,
+                                                             "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                                 index, 3)).text
+                    View_phone_ele = self.driver.find_element(BY.XPATH,
+                                                              "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[{}]".format(
+                                                                  index, 4)).text
+                    View_addr_ele = self.driver.find_element(BY.XPATH,
+                                                             '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[5]'.format(
+                                                                 index)).text
+                    unfind += 1
+                    if unfind > 1:
+                        if len(View_addr_ele) > 20:
+                            self.basep.swipe_direction('down', num=1, distance=1, ctime=1000) if top else self.basep.swipe_direction('up', 1,
+                                                                                                                                     1,
+                                                                                                                                     1000)
+                            continue
+                        else:
+                            self.basep.swipe_direction('down', num=1, distance=0.9, ctime=1000) if top else self.basep.swipe_direction('up', 1,
+                                                                                                                                       0.9,
+                                                                                                                                       1000)
+                            continue
+                else:
+                    print('\n\n\n\n\t\t\t\t\t 未知异常 \n\n\n\n')
+                    continue
 
+                hhanum = 1
                 confirm_ele = (BY.XPATH,
                                "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[{}]/android.view.View[2]/android.view.View[5]".format(
                                    int(lnum) + 8))
-                click_name_ele = self.driver.find_element(*View_click_ele).text
-
                 wuliuxinxi = (BY.CLASS_NAME, "android.widget.EditText")
-                if click_name_ele == '上传快递单':
-                    orderid = ExcelUtils().GetOrderId(phone=View_phone_ele[4:], name=View_name_ele[4:])
-                    logger.info('查找收货人：{}\n\t\t执行发货：{},{} \n\t\t发货内容：{}'.format(data[yy], View_name_ele, View_phone_ele, orderid))
-                else:
-                    orderid = (None, None)
-                    logger.info('该订单无法发货')
                 while orderid[0]:
                     try:
                         self.basep.sleep(2)
-                        logger.info('第{}次点击上传快递单：{}'.format(swip_num, View_click_ele[1][-30:]))
+                        logger.info('第{}次点击上传快递单：{}'.format(hhanum, View_click_ele[1][-30:]))
+                        local = True
+                        lllnum = 0
+                        while local:
+                            try:
+                                local = self.driver.find_element(*View_click_ele).location
+                                print('\t\t\t\t\t\t\t\t\t\t当前按钮位置:{}'.format(local))
+                                if local['y'] < 500:
+                                    self.basep.swipe_direction('down', num=1, distance=1, ctime=1000)
+                                if local['y'] > 2060:
+                                    self.basep.swipe_direction('up', 1, 1, 1000)
+                                else:
+                                    local = False
+                            except Exception:
+                                print('\t\t\t\t\t [{}]  调整按钮在当前屏幕的位置！'.format(lllnum))
+                                lllnum += 1
+                                if lllnum < 5:
+                                    self.basep.swipe_direction('down', num=1, distance=8, ctime=1000)
+                                elif lllnum > 5:
+                                    self.basep.swipe_direction('up', 1, 8, 1000)
+                                elif lllnum == 5:
+                                    self.basep.swipe_direction('up', 5, 8, 1000)
+                                else:
+                                    logger.error('福袋 {} - {}发货异常失败!!重新开始发货'.format(name, timec))
+                                    raise RuntimeError
                         self.driver.find_element(*View_click_ele).click()
                         self.basep.sleep(1)
                         WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
-                        # self.basep.input_text(wuliuxinxi, orderid[0])
-                        self.driver.find_element(*wuliuxinxi).send_keys(str(orderid[0]))
-                        # 手动选择快递公司
-                        self.basep.sleep(2)
-                        self.driver.find_element(*confirm_ele).click()
+
+
+                        aaaa = 0
+                        while aaaa > 15 or aaaa < 12:
+                            try:
+                                # self.driver.find_element(*wuliuxinxi).click()
+                                self.basep.sleep(1)
+                                self.basep.input_text(wuliuxinxi, str(orderid[0]))
+                                self.basep.sleep(3)
+                                self.driver.find_element(*confirm_ele).click()
+                                self.basep.sleep(1)
+                                aaaa = len(str(self.driver.find_element(*wuliuxinxi).text))
+                            except Exception:
+                                aaaa = 0
+                        print('输入运单号长度: {}'.format(aaaa))
+                        self.basep.sleep(3)
+                        # self.driver.find_element(*confirm_ele).click()
+                        self.basep.click_tap([520, 2090], 2)
                         self.basep.sleep(1)
-                        self.driver.find_element(*confirm_ele).click()
-                        logger.info('发货成功：{},{},{}'.format(View_name_ele, View_phone_ele, orderid))
-                        self.basep.sleep(1)
-                        # if index < 20 and swip_num > 2:
-                        #     self.driver.find_element(*top_ele).click()
-                        # else:
-                        #     self.basep.swipe_direction('up', num=1, distance=1)
-                        self.basep.swipe_direction('down', num=1, distance=1, ctime=1000)
+                        if unfind > 1:
+                            self.basep.swipe_direction('down', num=1, distance=0.9, ctime=1000) if top else self.basep.swipe_direction('up', 1,
+                                                                                                                                       0.9,
+                                                                                                                                       1000)
+                        unfind += 1
+                        bum += 1
+                        result['succeed'].append(str(View_phone_ele) + '：' + str(orderid))
+                        logger.info('{}:发货成功：{},{},{}'.format(index, View_name_ele, View_phone_ele, orderid))
                         break
                     except Exception:
-                        if swip_num > 50:
-                            raise TimeoutError
-                        elif swip_num / 2 == 0:
-                            self.basep.swipe_direction('up', num=swip_num, distance=8, ctime=1000)
-                            swip_num += 1
-                        else:
-                            self.basep.swipe_direction('down', num=swip_num, distance=8, ctime=1000)
-                            swip_num += 1
+                        logger.error('—————————————> 福袋 {} - {}发货异常失败!!重新开始发货'.format(name, timec))
+                        raise RuntimeError
                 else:
-                    data[yy].append('Excel中未找到该收货人')
-                    logger.info('Excel中未找到该收货人')
-                data[yy].append(orderid)
-                bum += 1
-
-        logger.info('—————————————> 福袋 {} - {} 发货[{}] 处理完毕\n处理数据：{}'.format(name, timec, bum, list_data))
-        self.basep.back()
+                    if unfind > 1:
+                        if len(View_addr_ele) > 20:
+                            self.basep.swipe_direction('down', num=1, distance=0.9, ctime=1000) if top else self.basep.swipe_direction('up', 1, 0.9,
+                                                                                                                                       1000)
+                        else:
+                            self.basep.swipe_direction('down', num=1, distance=0.8, ctime=1000) if top else self.basep.swipe_direction('up', 1, 0.8,
+                                                                                                                                       1000)
+                    unfind += 1
+                    result['fail'].append(str(View_phone_ele) + "-" + str(View_name_ele) + "：Excel中未找到该收货人")
+                    logger.info('{}:Excel中未找到该收货人'.format(index))
+        RWConfig().write_config('TTResult', str(timec).replace(' ', '').replace('/', '').replace(':', ''), str(result))
+        logger.info('—————————————> 福袋 {} - {} 发货[{}] 处理完毕\n\t\t\t\t\t\t处理数据：{}'.format(name, timec, bum, list_data))
 
     def consingee(self, name, timec, lnum):
         # 遍历中奖人：姓名、手机号；获取快递单ID，点击并填入快递单ID
@@ -427,16 +541,18 @@ class Test_TikTop:
         self.basep.back()
 
     def Consignment(self, filename):
-        ExcelUtils().ReadExcel(filename)
-        # self.To_luckybag()
-        input('\n\n----------------请先确定物流是否选择正确，点击进入福袋列表后Enter 继续！-----------\n\n')
-        self.basep.swipe_direction('up', distance=7, num=3, ctime=1000)
-        self.basep.sleep(1)
-        ff = filename.split('-')[-1].split('.')[0]
-        parms = ff[:4] + '/' + ff[4:6] + '/' + ff[6:]
-        # parms = '2020/12/25 11:43'
 
-        self.LuckyBag(parms=parms)
+        input('\n\n----------------请先确定物流是否选择正确，点击进入福袋列表后Enter 继续！-----------\n\n')
+        for file in filename:
+            ExcelUtils().ReadExcel(file)
+            # self.To_luckybag()
+            # self.basep.swipe_direction('up', distance=7, num=3, ctime=1000)
+            self.basep.sleep(1)
+            ff = file.split('-')[-1].split('.')[0]
+            parms = ff[:4] + '/' + ff[4:6] + '/' + ff[6:]
+            # parms = '2020/12/25 11:43'
+            self.LuckyBag(parms=parms)
+        ExcelUtils().check_run_data()
 
     def click(self, loc):
         """
@@ -522,26 +638,9 @@ class ExcelUtils:
                 row_data['name'] = name.strip(' ')
                 row_data['exm'] = exm
                 huanfa_data[orderId] = row_data
-        global Excel_data
+        global Excel_data, HuanfaData
         Excel_data = test_data
-        print(Excel_data)
-        # 检查数据是否重复
-        orderid, reorderid, consignee, reconsignee = [], [], [], []
-        for k, v in test_data.items():
-            if k not in orderid:
-                orderid.append(k)
-            else:
-                reorderid.append(k)
-            if v not in consignee:
-                consignee.append(v)
-            else:
-                reconsignee.append(v)
-        if len(reorderid):
-            raise ValueError('Excel快递单号重复:{}'.format(reorderid))
-        elif len(reconsignee):
-            logger.error('Excel收货人重复：{}'.format(reconsignee))
-        elif len(huanfa_data):
-            logger.error('Excel运单号异常数据：{}'.format(huanfa_data))
+        HuanfaData = huanfa_data
         logger.debug('Excel待处理快递单数量：{}，待处理快递单：{}'.format(len(test_data), test_data))
 
     def check_data(self, data):
@@ -572,8 +671,8 @@ class ExcelUtils:
         num = len(Excel_data)
         logger.info('Excel_data数据：{}'.format(Excel_data))
         for k, v in Excel_data.items():
-            if phone in v['phone'] and name in v['name']:
-                Excel_data.pop(k)
+            if phone in v['phone']:
+                # Excel_data.pop(k)
                 logger.info('Excel取出数据：{}:{}:{}'.format(v['name'], v['phone'], k))
                 if len(Excel_data) / num == 0.5:
                     logger.info('Excel数据已处理50%')
@@ -592,6 +691,85 @@ class ExcelUtils:
             else:
                 return True
 
+    def check_run_data(self):
+        rundata = RWConfig().read_config_options_dict('Rett')
+        for k, v in rundata.items():
+            filename = '抖音快递单-' + str(k[:-4]) + '.xls'
+            un_result = {}
+            self.ReadExcel(filename)
+
+            run_data_num = v[5]
+            new_consignee = v[7:] if '人获得福袋）' in v[6] and '上传快递单' in v[-1] else v[7:-2]
+            # 根据每个收货人给list分组
+            run_data = []
+            datalist = []
+            run_end_data = []
+            for ii in new_consignee:
+                if '上传快递单' == ii or '提醒一下' == ii or '收货信息：逾期未填写' == ii or '修改快递单' == ii:
+                    datalist.append(ii)
+                    run_data.append(datalist)
+                    datalist = []
+                else:
+                    datalist.append(ii)
+            if int(run_data_num) == len(run_data):
+                logger.info('给App收货人分组,得到 {} 个收货人'.format(len(run_data)))
+                for i in run_data:  # 每个收货人
+                    for ix in range(len(i)):
+                        if '韵达速递' in i[ix]:
+                            self.check_run_excel(i, ix, k, 1)
+                        elif '上传快递单' in i[ix]:
+                            self.check_run_excel(i, ix, k, 2)
+                        elif '收货信息：逾期未填写' in i[ix] or '提醒一下' in i[ix]:
+                            self.check_run_excel(i, ix, k, 3)
+                logger.info('{} 福袋检查完毕，结果数据以保存'.format(str(k[:-4])))
+            else:
+                logger.error('[{}]  Rett数据与福袋数量不一致: {} != {}'.format(str(k[:-4]), run_data_num, str(len(run_data))))
+                RWConfig().write_config('CheckResult', str(k[:-4]), 'None')
+
+    def check_run_excel(self, i, ix, k, method):
+        filename1 = '抖音快递单-' + str(k[:-4]) + '.xls'
+        logger.info('开始检查 {} 福袋: nickname: {}'.format(str(k[:-4]), i[ix - 4]))
+        consigee_result = {'succeed': [], 'orderfail': [], 'phonefail': [], 'namefail': [], 'undefined': [], 'huanfa': [], 'overdue': []}
+        self.ReadExcel(filename1)
+        global Excel_data, HuanfaData
+        aa = {}
+        for k, v in Excel_data.items():
+            if method == 1:
+                if i[ix][6:] == k:
+                    aa[k] = {'nickname': i[0], 'phone': i[ix - 2][4:], 'name': i[ix - 3][4:]}
+                    logger.info('匹配到快递单:{}'.format(i[ix][6:]))
+                    if i[ix - 2][4:] in v['phone']:
+                        logger.info('匹配到手机号:{}'.format(i[ix - 2][4:]))
+                        if i[ix - 3][4:] in v['name']:
+                            logger.info('匹配到姓名:{}'.format(i[ix - 3][4:]))
+                            consigee_result['succeed'].append(aa)
+                        else:
+                            logger.info('{} - {} 没有匹配到姓名:{}'.format(i[0], i[ix - 2][4:], i[ix - 3][4:]))
+                            consigee_result['namefail'].append(aa)
+                    else:
+                        logger.error('{} - {} 没有匹配到手机号:{}'.format(i[0], i[ix - 2][4:], i[ix - 2][4:]))
+                        consigee_result['phonefail'].append(aa)
+                else:
+                    logger.info('{} - {} 没有匹配到快递单:{}'.format(i[0], i[ix - 2][4:], k))
+                    consigee_result['orderfail'].append(aa)
+            elif method == 2:
+                if i[ix - 2][4:] in v['phone']:
+                    aa[k] = {'nickname': i[0], 'phone': i[ix - 2][4:], 'name': i[ix - 3][4:]}
+                    logger.info('遗漏发货人[ {}: {} - {} ], 需重新发货'.format(k, i[ix - 2][4:], i[ix - 3][4:]))
+                    consigee_result['undefined'].append(aa)
+                else:
+                    for kk, vv in HuanfaData.items():
+                        if i[ix - 2][4:] in vv['phone']:
+                            logger.info('缓发 [ {} - {} ], 等待发货中！'.format(i[ix - 2][4:], i[ix - 3][4:]))
+                            consigee_result['huanfa'].append(aa)
+            elif method == 3:
+                aa[i[0]] = {i[1]}
+                logger.info('用户 [ {} ] 收货信息信息未填写！'.format(i[0]))
+                consigee_result['overdue'].append(aa)
+            else:
+                pass
+        RWConfig().write_config('CheckResult', str(k[:-4]), str(consigee_result))
+
 
 if __name__ == '__main__':
     # ExcelUtils().ReadExcel('抖音快递单-20201225.xls')
@@ -604,5 +782,6 @@ if __name__ == '__main__':
     # ExcelUtils().check_Phone_reprat()
 
     # ctime = '2021/01/06 13:31'
-    filename = '抖音快递单-20201225.xls'
+    resss = ['抖音快递单-20201225.xls']
+    filename = ['抖音快递单-20201227.xls', '抖音快递单-20201228.xls', '抖音快递单-20201229.xls', '抖音快递单-20201230.xls']
     Test_TikTop().Consignment(filename)
