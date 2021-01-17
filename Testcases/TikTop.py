@@ -405,6 +405,9 @@ class Test_TikTop:
                                     self.basep.swipe_direction('up', 1, 1, 1000)
                                 else:
                                     local = False
+                                    self.driver.find_element(*View_click_ele).click()
+                                    self.basep.sleep(1)
+                                    WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
                             except Exception:
                                 print('\t\t\t\t\t [{}]  调整按钮在当前屏幕的位置！'.format(lllnum))
                                 lllnum += 1
@@ -417,27 +420,52 @@ class Test_TikTop:
                                 else:
                                     logger.error('福袋 {} - {}发货异常失败!!重新开始发货'.format(name, timec))
                                     raise RuntimeError
-                        self.driver.find_element(*View_click_ele).click()
-                        self.basep.sleep(1)
-                        WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
 
+                        # self.driver.find_element(*View_click_ele).click()
+                        # self.basep.sleep(1)
+                        # WebDriverWait(self.driver, 1).until(EC.visibility_of_element_located(wuliuxinxi))
+                        # aaaa = 0
+                        try:
+                            self.basep.input_text(wuliuxinxi, str(orderid[0]))
+                            self.basep.sleep(3)
+                            self.driver.find_element(*confirm_ele).click()
+                            self.basep.sleep(1)
+                            aaaa = len(str(self.driver.find_element(*wuliuxinxi).text))
+                            self.basep.click_tap([520, 2090], 1)
+                        except Exception:
+                            aaaa = 0
 
-                        aaaa = 0
+                        wunm = 0
                         while aaaa > 15 or aaaa < 12:
+                            print('\t\t\t\t\t第 {} 次输入运单号'.format(wunm))
+                            wunm += 1
+                            if wunm == 10:
+                                raise RuntimeError
                             try:
-                                # self.driver.find_element(*wuliuxinxi).click()
+                                xxxlocal =self.driver.find_element_by_android_uiautomator('new UiSelector().textContains("顺丰速递")').location
+                                self.driver.back()
+                            except Exception:
+                                pass
+                            try:
+                                self.basep.sleep(1)
+                                try:
+                                    kkkk = self.driver.find_element(*wuliuxinxi).location
+                                except Exception:
+                                    self.driver.find_element(*View_click_ele).click()
                                 self.basep.sleep(1)
                                 self.basep.input_text(wuliuxinxi, str(orderid[0]))
-                                self.basep.sleep(3)
+                                self.basep.sleep(4)
                                 self.driver.find_element(*confirm_ele).click()
                                 self.basep.sleep(1)
                                 aaaa = len(str(self.driver.find_element(*wuliuxinxi).text))
+                                self.basep.click_tap([520, 2090], 1)
+                                self.basep.sleep(1)
                             except Exception:
                                 aaaa = 0
                         print('输入运单号长度: {}'.format(aaaa))
                         self.basep.sleep(3)
                         # self.driver.find_element(*confirm_ele).click()
-                        self.basep.click_tap([520, 2090], 2)
+                        self.basep.click_tap([520, 2090], 1)
                         self.basep.sleep(1)
                         if unfind > 1:
                             self.basep.swipe_direction('down', num=1, distance=0.9, ctime=1000) if top else self.basep.swipe_direction('up', 1,

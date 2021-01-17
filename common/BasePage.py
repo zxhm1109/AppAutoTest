@@ -90,8 +90,9 @@ class BasePage(object):
     def input_text(self, locator, text='', doc=''):
         ele = self.get_element(locator, doc)
         try:
-            self.sleep(1)
+            self.sleep(2)
             ele.send_keys(text)
+            self.sleep(3)
             self.logger.info('{}:元素：{} 输入内容：{}'.format(doc, locator, text))
         except:
             self.logger.exception('元素输入操作失败！')
